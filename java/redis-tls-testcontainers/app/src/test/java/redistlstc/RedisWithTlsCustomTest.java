@@ -10,14 +10,12 @@ import redis.clients.jedis.Jedis;
 import javax.net.ssl.KeyManagerFactory;
 import javax.net.ssl.SSLContext;
 import javax.net.ssl.TrustManagerFactory;
-import java.io.IOException;
 import java.security.*;
-import java.security.cert.CertificateException;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
 @Testcontainers
-class RedisWithTlsDefaultTest {
+class RedisWithTlsCustomTest {
 
     private static final int PORT = 6379;
 
